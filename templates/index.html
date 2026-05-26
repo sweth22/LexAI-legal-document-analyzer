@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LexAI – Legal Document Analyzer</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>⚖ LexAI</h2>
+
+
+
+
+<div class="menu">
+
+<p onclick="showChat()">💬 Legal Chat</p>
+
+<p onclick="showReports()">📊 Reports</p>
+
+<p onclick="downloadReport()">⬇ Download Analysis</p>
+
+<p onclick="newChat()">➕ New Chat</p>
+
+
+</div>
+
+</div>
+
+
+<!-- Main Chat Area -->
+
+<div class="main">
+
+<header>
+
+<h2>Legal Helper Chatbot</h2>
+
+<div>
+
+<button onclick="toggleTheme()">🌙</button>
+<button onclick="startVoice()">🎤</button>
+
+</div>
+
+</header>
+
+
+<div id="chatbox"></div>
+
+
+<div class="input-area">
+
+<input id="userInput" placeholder="Ask legal questions or paste document text...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+
+<div class="upload-area">
+
+<input type="file" id="fileInput">
+
+<button onclick="uploadFile()">Upload PDF</button>
+
+<button onclick="downloadReport()">Download Report</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
